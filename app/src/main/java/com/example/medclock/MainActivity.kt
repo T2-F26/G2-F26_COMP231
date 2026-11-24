@@ -1,5 +1,5 @@
 package com.example.medclock
-
+import com.example.medclock.screens.MedicationListScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.medclock.ui.theme.MedClockTheme
+import com.example.medclock.screens.MedClockHome
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +21,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             MedClockTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    MedClockHome(
                         modifier = Modifier.padding(innerPadding)
                     )
+
                 }
             }
         }
