@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="com.example.medclock.josefinademo.JosefinaDemoActivity"
+            android:exported="true"
+            android:label="MedClock - Josefina demo"
+            android:taskAffinity="com.example.medclock.josefinademo"
+            android:theme="@style/Theme.MedClock"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
