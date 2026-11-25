@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedClock">
         <activity
+            android:name="com.example.medclock.mareena.MareenaTestbedActivity"
+            android:exported="false" />
+        <activity
             android:name=".testbed"
             android:exported="true"
             android:label="@string/app_name"
